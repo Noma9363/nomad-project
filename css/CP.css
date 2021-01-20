@@ -1,0 +1,597 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+/* 애니메이션 구간 End */
+
+
+
+div.wrapper
+{
+    margin: 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #2e3e57A3;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+}
+
+/* 콘텐츠 1 구간*/
+div.content_1
+{
+    width: 100%;
+    height: 1000px;
+    background: url('../image/slides/CP_P_slide1_02_01.jpg') no-repeat;
+    background-color: none;
+    overflow: hidden;
+}
+/* 텍스트 콘텐츠 div */
+div.content_1 div
+{
+    width: 430px;
+    height: 430px;
+    background: url(../image/icons/CP2top.png);
+    background-size: 100%;
+    margin-left: 190px;
+    margin-top: 320px;
+}
+h1
+{
+    font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;;
+    font-weight: bold;
+    font-size: 82px;
+    margin: 0;
+    padding-top: 60px;
+    color: #ffffff;
+    position: relative;
+    right: 50px;
+}
+/* 안에 설명하는 텍스트들 */
+div.content_1 p
+{
+    padding-right: 35px;
+    padding-left: 35px;
+    margin-top: 20px;
+}
+/* 첫번쨰 서브타이틀 */
+div.content_1 p:nth-child(2)
+{
+    color: #ffffff;
+    font-family: 'NIXGONB-Vb';
+    font-size: 20.55px;
+    line-height: 35px;
+    margin-top: 0;
+    padding-right: 130px;
+}
+/* 설명 */
+div.content_1 p:nth-child(3)
+{
+    color: #ffffff;
+    font-family: 'NIXGONM-Vb';
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* 콘텐츠2 */
+div.content_2
+{
+    width: 100%;
+    height: 1000px;
+}
+/* 콘텐츠2 상단 */
+div.content_2 div.top
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/CP_P_slide1_02_03.jpg);
+}
+/* 콘텐츠2상단 내용 */
+div.content_2 div.top div.sub_content
+{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #2e3e57A3;
+}
+/* span 대체 앨리먼트 */
+div.content_2 div.top div.sub_content div:nth-child(1)
+{
+    flex: 1;
+    background-color: none;
+}
+div.content_2 div.top div.sub_content div:nth-child(2)
+{
+    flex: 2;
+    background-color: none;
+    text-align: center;
+}
+div.content_2 div.top div.sub_content div:nth-child(3)
+{
+    flex: 2;
+    background-color: none;
+    text-align: center;
+}
+div.content_2 div.top div.sub_content div:nth-child(4)
+{
+    flex: 2;
+    background-color: none;
+    text-align: center;
+}
+div.content_2 div.top div.sub_content div:nth-child(5)
+{
+    flex: 1;
+    background-color: none;
+}
+
+img.icon
+{
+    margin-top: 120px;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px;
+}
+img.two
+{
+    margin-top: 150px;
+    margin-bottom: 50px;
+    width: 100px;
+    height: 100px;
+}
+/* 부제목 */
+p.subpH
+{
+    font-family: 'NIXGONB-Vb';
+    color: #ffffff;
+    font-size: 25px;
+}
+
+/* 내용 */
+p.subp
+{
+    font-family: 'NIXGONM-Vb';
+    color: #ffffff;
+    font-size: 16px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+/* 콘텐츠2하단 */
+div.content_2 div.bottom
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/CP_P_slide1_02_04_04.jpg);
+    display: flex;
+}
+/* 좌측 iframe */
+div.content_2 div.bottom div:nth-child(1)
+{
+    flex: 7.5;
+    text-align: left;
+}
+/* 지도 */
+iframe
+{
+    margin: 0 auto;
+    padding: 75px;
+}
+/* 우측 내용 */
+div.content_2 div.bottom div:nth-child(2)
+{
+    flex: 2.5;
+    color: white;
+    font-family: 'NIXGONM-Vb';
+    text-align: left;
+    padding-left: 30px;
+}
+div.content_2 div.bottom div:nth-child(2) p:nth-child(1)
+{
+    margin-top: 120px;
+    font-size: 44px;
+    margin-bottom: 145px;
+}
+div.content_2 div.bottom div:nth-child(2) p:nth-child(2)
+{
+    font-size: 20px;
+    line-height: 35px;
+}
+
+/* 컨텐츠3 */
+div.content_3
+{
+    clear: both;
+    width: 100%;
+    height: 1000px;
+    background-color: springgreen;
+}
+/* 컨텐츠3 상단 */
+div.content_3 div.top
+{
+    width: 100%;
+    height: 400px;
+    background-color: tomato;
+}
+/* 컨텐츠3 상단 좌측 내용 */
+div.content_3 div.top div.T_LEFT
+{
+    width: 690px;
+    height: 100%;
+    /* background: linear-gradient( to bottom right, #1a212a, #2b3646); */
+    margin-left: 0;
+    float: left;
+    position: relative;
+    z-index: 999;
+}
+div.content_3 div.top div.T_LEFT div.fill
+{
+    width: 500px;
+    height: 0;
+    border-bottom: 600px solid #2b3646;
+    border-right: 320px solid transparent ;
+    position: relative;
+}
+div.content_3 div.top div.T_LEFT div.fill
+{
+    padding-left: 90px;
+}
+
+p.Head
+{
+    margin-right: 80px;
+    font-size: 32px;
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb';
+    padding-top: 100px;
+    text-align: center;
+    line-height: 45px;
+}
+p.context
+{
+    margin-right: 80px;
+    font-size: 23px;
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb';
+    text-align: center;
+    margin-top: 80px;
+    line-height: 40px;
+}
+
+/* 컨텐츠3 상단 우측 이미지 */
+div.content_3 div.top div.T_RIGHT
+{
+    width: 690px;
+    height: 100%;
+    background-color: #ffffff;
+    float: right;
+    position: relative;
+    top: -400px;
+    text-align: center;
+}
+/* 이미지 영역 */
+div.content_3 div.top div.T_RIGHT img
+{
+    width: 220px;
+    height: auto;
+    padding: 90px;
+    padding-left: 230px;
+    margin-right: 0px;
+    padding-right: 0;
+    position: relative;
+}
+/* 컨텐츠3 중앙영역 */
+div.content_3 div.middle
+{
+    position: relative;
+    z-index: 999;
+    clear: both;
+    width: 1200px;
+    height: 200px;
+    background-color: #ffffff;
+    padding: 0%;
+    margin: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+}
+
+div.content_3 div.middle div
+{
+    flex: 1;
+    text-align: center;
+}
+div.content_3 div.middle div img
+{
+    margin-top: 40px;
+    width: 120px;
+    height: 120px;
+    transform: scale(1.1);
+    transition: transform .5s;
+}
+/* 컨텐츠3 하단영역 */
+div.content_3 div.bottom
+{
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url(../image/slides/CP_P_slide2_bottom.jpg);
+    bottom: 200px;
+}
+
+/* 애니메이션 테스트 */
+@keyframes imgscaleup
+{
+    0%
+    {
+        transform: scale(1.1);
+    }
+    50%
+    {
+        transform: scale(2);
+    }
+}
+
+/* div.middle 안에 이미지 후버 */
+div.content_3 div.middle div:hover
+{
+    transform: scale(1.2);
+    transition: transform .5s;
+}
+div.content_3 div.middle div
+{
+    transform: scale(1);
+    transition: transform .5s;
+}
+/* 이미지 드래그 방지 */
+div.content_3 div.middle div img
+{
+    -webkit-user-drag: none;
+}
+
+div.someting_worng
+{
+    position: relative;
+    text-align: center;
+    background-color: none;
+}
+div.someting_worng p
+{
+    color: white;
+    font-family: 'NIXGONL-Vb';
+    font-size: 23px;
+    padding-top: 95px;
+}
+div.someting_worng button
+{
+    color: white;
+    background-color: #20334fA3;
+    font-family: 'NIXGONL-Vb';
+    font-size: 45px;
+    width: 420px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 30px;
+    border-radius: 40px 40px 40px 40px;
+    border: 1px solid #ffffff;
+    letter-spacing: 8px;
+}
+
+/* 둘러보기 영역 버튼 */
+button.SearchBT
+{
+    color: white;
+    background-color: #20334fA3;
+    font-family: 'NIXGONL-Vb';
+    font-size: 45px;
+    width: 420px;
+    height: 80px;
+    line-height: 80px;
+    margin-top: 30px;
+    border-radius: 40px 40px 40px 40px;
+    border: 1px solid #ffffff;
+    letter-spacing: 8px;
+    transition-duration: 00.3s;
+}
+/* 후버 */
+button.SearchBT:hover
+{
+    background-color: #ffffffA3;
+    color: #20334f;
+    transition: all 0.1s ease-in-out;
+}
+
+
+
+/* 푸터 */
+footer
+{
+    clear: both;
+    position: absolute;
+    width: 1200px;
+    height: 80px;
+    top: 320px;
+    bottom: 0px;
+    background-color: #20334fA3;
+    z-index: 999;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}
+

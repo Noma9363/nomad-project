@@ -1,0 +1,204 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.wrapper
+{
+    margin : 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #20334fA3;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    border-radius: 10px;
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+}
+/* 컨텐츠 시작 */
+
+/* 컨텐츠1 */
+div.content_1
+{
+    width: 100%;
+    height: 1000px;
+    background: url(../image/slides/MYPAGE_SPLASH.jpg);
+}
+/* 컨텐츠1 메인 div */
+div.content_1 div.maindiv
+{
+    clear: both;
+    width: 100%;
+    height: 100%;
+    background-color: none;
+}
+/* 위에 본격적인 내부 콘텐츠 */
+div.content_1 div.maindiv div.filldiv
+{
+    position: relative;
+    top: 200px;
+    margin: 0 auto;
+    width: 800px;
+    height: 600px;
+    background-color: aqua;
+}
+/* 내 인적사항 */
+
+
+
+
+/* 컨텐츠 끝 */
+div.content_end
+{
+    background-color: aquamarine;
+    width: 1200px;
+    height: 0;
+}
+/* 푸터 */
+footer
+{
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    background-color: #20334fA3;
+    bottom: 80px;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

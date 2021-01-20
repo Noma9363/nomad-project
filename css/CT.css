@@ -1,0 +1,358 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+/* 애니메이션 구간 End */
+
+div.wrapper
+{
+    margin : 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #20334f;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    width: 1200px;
+}
+/* 컨텐츠 시작 */
+
+/* 컨텐츠1 */
+div.content_1
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/CT_P_slide1_01.jpg), #20334fA3;
+    background-color: #ffffff3a;
+    background-color: #20334f;
+    text-align: center;
+}
+button.CT_H
+{
+    background-color: #20334fA3;
+    transition-duration:  0.3s;
+}
+/* 애니메이션 효과 */
+div.content_1 div.fillContentDiv
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    transition-duration: 00.3s;
+}
+div.content_1 div.fillContentDiv:hover
+{
+    background-color: #20334fA3;
+    transition: 0.3s ease-in-out;
+}
+/* 버튼애니메이션 효과 */
+button.CT_H:hover
+{
+    background-color: #ffffff;
+    color: #20334f;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* 컨텐츠2 */
+div.contnet_2
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/CT_P_slide1_02.jpg);
+    text-align: center;
+}
+button.CT_C
+{
+    background-color: #4f2020a3;
+    transition-duration:  0.3s;
+}
+/* 애니메이션 효과 */
+div.contnet_2 div.fillContentDiv
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    transition-duration: 00.3s;
+}
+div.contnet_2 div.fillContentDiv:hover
+{
+    background-color: #4f2020a3;
+    transition: 0.3s ease-in-out;
+}
+button.CT_C:hover
+{
+    background-color: #ffffff;
+    color: #4f2020;
+    transition: 0.3s ease-in-out;
+}
+
+/* 컨텐츠3 */
+div.contnet_3
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/CT_P_slide1_03.jpg);
+    text-align: center;
+}
+button.CT_J
+{
+    background-color: #4e4f20a3;
+    transition-duration:  0.3s;
+}
+/* 애니메이션 효과 */
+div.contnet_3 div.fillContentDiv
+{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff00;
+    transition-duration: 00.3s;
+}
+div.contnet_3 div.fillContentDiv:hover
+{
+    background-color: #4e4f20a3;
+    transition: 0.3s ease-in-out;
+}
+button.CT_J:hover
+{
+    background-color: #ffffff;
+    color: #4e4f20;
+    transition: 0.3s ease-in-out;
+}
+
+/* 공통영역 */
+h1,h2,h3
+{
+    padding-top: 100px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 145px;
+    font-family: 'NIXGONL-Vb';
+    letter-spacing: 20px;
+    font-weight: normal;
+    color: #ffffff;
+}
+p.context
+{
+    text-align: center;
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb';
+    font-size: 24px;
+    line-height: 40px;
+}
+button.CT_ST_B
+{
+    width: 220px;
+    height: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 30px 30px;
+    color: #ffffff;
+    box-sizing: border-box;
+    border: 2px solid #ffffff;
+    font-family: 'NIXGONL-Vb';
+    font-size: 30px;
+    letter-spacing: 5px;
+}
+p.sub_context
+{
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb';
+    font-size: 14px;
+}
+
+
+
+
+/* 컨텐츠 끝 */
+div.content_end
+{
+    background-color: aquamarine;
+    width: 1200px;
+    height: 80px;
+}
+/* 푸터 */
+footer
+{
+    width: 1200px;
+    height: 80px;
+    top: 920px;
+    background-color: #20334f;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

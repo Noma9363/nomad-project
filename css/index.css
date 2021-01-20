@@ -1,0 +1,723 @@
+/* 초기화 */
+*
+{
+    margin: 0 auto;
+    font-family: 맑은 고딕 sans-serif;
+}
+
+body
+{
+    background-color: rgb(255, 255, 255)
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.3s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 3px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT
+{
+    transition-duration: 00.3s;
+}
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+
+/* 스크롤 이미지 */
+
+/* 키프레임 애니메이션 */
+@keyframes scani
+{
+    0%
+    {
+        transform: translatey(0px);
+    }
+    50%
+    {
+        transform: translatey(10px);
+    }
+
+}
+@keyframes scaleup
+{
+    0%
+    {   
+        border-color: #ffffff;
+        /* transform: scale(1); */
+    }
+    100%
+    {
+        border-color: #20334f;
+        background-color: #ffffff;
+        color: #20334f;
+        /* transform: scale(1.2); */
+    }
+    
+}
+/* 스크롤 버튼 이미지 */
+img.sr
+{
+    position: relative;
+    cursor: pointer;
+    /* 애니메이션 적용 */
+    animation: scani 1s infinite ease-in-out;
+}
+
+/* 신청하기 구간 */
+div.ap
+{
+    cursor: pointer;
+}
+
+/* 애니메이션 구간 End */
+
+
+
+
+div.wrapper
+{
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    height: 80px;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+}
+
+/* 콘텐츠 1 구간*/
+div.content_1
+{
+    width: 100%;
+    height: 1000px;
+    background: url('../image/slides/CP_slide1_01.jpg') no-repeat;
+    background-color: none;
+    overflow: hidden;
+}
+div.fill_div
+{
+    width: 100%;
+    height: 100%;
+    background-color: #20334fA3;
+    padding-top: 200px;
+    padding-left: 110px;
+}
+/* 콘텐츠1 폰트 색 */
+div.fill_div p
+{
+    color: white;
+}
+/* p 첫번쨰 요소 */
+div.fill_div p:nth-child(1)
+{
+    font-size: 53px;
+    margin-bottom: 40px;
+}
+/* 로고이미지 */
+div.fill_div img
+{
+    width: 725px;
+    height: 140px;
+}
+/* h1 */
+div.fill_div h1
+{
+    color: white;
+    font-size: 53px;
+    text-decoration: none;
+    font-weight: normal;
+    margin-top: 60px;
+}
+/* p 2 3 구간 */
+div.fill_div p:nth-child(n+2)
+{
+    font-size: 30px;
+    margin-top: 60px;
+}
+div.fill_div p:nth-last-child(3)
+{
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+/* 버튼 */
+div.fill_div div.ap
+{
+    width: 240px;
+    height: 108px;
+    font-size: 55px;
+    background-color: #20334f;
+    color: #ffffff;
+    text-align: center;
+    margin: 0px;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    bottom: 100px;
+    left: 720px;
+    cursor: pointer; 
+}
+
+div.fill_div div.ap button
+{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    line-height: 100px;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff00;
+    box-sizing: border-box;
+    border: 6px solid white;
+    font-size: 55px;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+/* 위 버튼 애니 */
+div.fill_div div.ap button:hover
+{
+    background-color: #ffffff;
+    color: #20334f;
+    border-color: #20334f;
+    transition: 0.3s ease-in-out;
+}
+/* 스크롤 아이콘 */
+div.content_1 img.sr
+{
+    position: relative;
+    width: 135px;
+    height: 69px;
+    margin: 0 auto;
+    display: block;
+    right: 110px;
+    opacity: 60%;
+}
+
+/* 콘텐츠2 */
+div.content_2
+{
+    width: 100%;
+    height: 1000px;
+    background-color: none;
+}
+
+/* 왼쪽구간 */
+div.content_2 article
+{
+    float: left;
+    width: 50%;
+    height: 100%;
+    background-color: none;
+}
+/* 왼쪽구간 상단 */
+div.content_2 article div.top
+{
+    width: 560px;
+    height: 530px;
+    background: linear-gradient( to left bottom, #292929, #363636);
+    color: #ffffff;
+    padding-top: 70px;
+    padding-left: 40px;
+    font-size: 62px;
+    font-weight: bold;
+}
+div.content_2 article div.top p
+{
+    font-weight: bold;
+    font-size: 200px;
+    transform: translateX(-100%);
+    transition: transform .8s;
+}
+h2
+{
+    display: inline;
+}
+/* 왼쪽구간 하단 */
+div.content_2 article div.bottom
+{
+    width: 560px;
+    height: 400px;
+    background: linear-gradient( to bottom, #2e3e57, #1a2331);
+    color: #ffffff;
+    padding-left: 40px;
+}
+div.content_2 article div.bottom p
+{
+    padding-top: 100px;
+    padding-right: 40px;
+    font-size: 24px;
+    line-height: 200%;
+}
+div.content_2 article div.bottom u
+{
+    line-height: 150px;
+}
+/* 오른쪽 구간 */
+div.content_2 aside
+{
+    float: right;
+    width: 600px;
+    height: 1000px;
+    background-color: none;
+    text-align: right;
+}
+/* 이미지 조정 */
+div.content_2 aside img
+{
+    position: relative;
+    right: 60px;
+}
+
+/* 콘텐츠3 */
+div.content_3
+{
+    width: 100%;
+    height: 1000px;
+    clear: both;
+}
+/* 왼쪽구간 */
+div.content_3 article
+{
+    float: left;
+    width: 680px;
+    height: 100%;
+    background: linear-gradient(to bottom, #292929, #363636);
+    text-align: center;
+    color: white;
+}
+/* 왼쪽구간 컨텐츠 */
+div.content_3 article p
+{
+    padding-top: 120px;
+    font-size: 56px;
+}
+div.content_3 article img
+{
+    width: 410px;
+    height: 80px;
+    padding-top: 40px;
+    margin-bottom: 30px;
+}
+
+/* 연혁 그래프 */
+div.content_3 div.History
+{
+    display: flex;
+    overflow: hidden;
+}
+/* 왼쪽 */
+div.content_3 div.History div.left
+{
+    flex: 2;
+    height: 700px;
+}
+/* 왼쪽 컨텐츠 */
+div.content_3 div.History div.left div.sub
+{
+    width: 140px;
+    height: 70px;
+    font-size: 40px;
+    color: white;
+    text-align: right;
+    margin-right: 0;
+    margin-bottom: 100px;
+}
+
+/* 가운데 */
+div.content_3 div.History div.center
+{
+    flex: 1;
+    height: 700px;
+    text-align: center;
+}
+div.content_3 div.History div.center div.sub
+{
+    width: 45px;
+    height: 45px;
+    font-size: 40px;
+    background-color: #ffffff;
+    text-align: right;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 12.5px solid #2e3e57;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 9999;
+}
+/* 작대기 */
+div.content_3 div.History div.center div.Ract
+{
+    width: 14px;
+    height: 600px;
+    background-color: #2e3e57;
+    position: relative;
+    z-index: 0;
+    bottom: 700px;
+}
+
+/* 오른쪽 */
+div.content_3 div.History div.right
+{
+    flex: 2;
+    height: 700px;
+}
+div.content_3 div.History div.right div.sub
+{
+    width: 250px;
+    height: 70px;
+    font-size: 26px;
+    color: white;
+    text-align: left;
+    margin-left: 0;
+    line-height: 40px;
+    margin-bottom: 100px;
+    position: relative;
+    z-index: 5;
+}
+div.content_3 div.History div.right div.sub1
+{
+    padding-top: 10px;
+    margin-bottom: 90px;
+}
+/* 왼쪽구간 */
+div.content_3 aside
+{
+    float: right;
+    width: 520px;
+    height: 100%;
+    background : linear-gradient( to bottom, #9a9a9a, #ffffff);
+    position: relative;
+}
+div.content_3 aside img
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+/* 콘텐츠4 */
+div.content_4
+{
+    width: 100%;
+    height: 1000px;
+}
+div.content_4 div.top
+{
+    width: 100%;
+    height: 300px;
+    background: url(../image/slides/CP_Slide4_r.jpg);
+    text-align: center;
+}
+div.content_4 div.top div.splash
+{
+    background-color: #2e3e57A3;
+    width: 100%;
+    height: 250px;
+    padding-top: 50px;
+}
+div.content_4 div.top div.splash p
+{
+    color: white;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+div.content_4 div.top div.splash div
+{
+    width: 450px;
+    height: 140px;
+    background-color: #2e3e57A3;
+    line-height: 140px;
+    color: white;
+    font-size: 70px;
+    letter-spacing: 15px;
+    box-sizing: border-box;
+    padding: 10px 10px;
+}
+div.content_4 div.top div.splash div div
+{
+    box-sizing: border-box;
+    width: 430px;
+    height: 120px;
+    border: 3px solid #ffffff;
+    line-height: 100px;
+}
+/* 컨텐츠4 하단 */
+div.content_4 div.bottom
+{
+    width: 100%;
+    height: 700px;
+    background: linear-gradient( to left top, #2e2e2e, #7c7c7c);    
+}
+/* 좌측 */
+div.content_4 div.bottom div.left
+{
+    float: left;
+    background-color: none;
+    width: 600px;
+    height: 100%;
+    text-align: center;
+}
+/* 우측 */
+div.content_4 div.bottom div.right
+{
+    float: right;
+    background-color: none;
+    width: 600px;
+    height: 100%;
+}
+div.content_4 div.bottom div.right p
+{
+    margin-left: 0px;
+    color: #ffffff;
+}
+div.content_4 div.bottom div.right p.Headline
+{
+    font-size: 41px;
+    margin-top: 150px;
+
+}
+div.content_4 div.bottom div.right p.name
+{
+    margin-top: 25px;
+    font-size: 30px;
+}
+div.content_4 div.bottom div.right p.context_1
+{
+    margin-top: 45px;
+    font-size: 22px;   
+}
+div.content_4 div.bottom div.right p.context_2
+{
+    margin-top: 45px;
+    font-size: 20px;
+    padding-right: 50px;   
+}
+
+/* 콘텐츠4 추가작업 좌우 이동 */
+/* 콘텐츠4 하단 부모 */
+div.bottom
+{
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    /* 오버플로우 */
+    overflow: hidden;
+}
+div.bottom > .slideWrap{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 3600px;
+    height: 700px;
+    transition: left .6s;
+}
+/* 자식 */
+div.bottom div[class ^= 'bottomPage']
+{
+    float: left;
+    width: 1200px;
+    height: 700px;
+}
+div.bottom > i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-76%);
+    z-index: 10;
+    cursor: pointer;
+}
+div.bottom > i.left{
+    left: 0;
+}
+div.bottom > i.right{
+    right: 0;
+}
+
+
+/* 좌우 셀렉트 아이콘 설정 */
+i.fa
+{
+    color: #ffffff;
+    font-size: 180px;
+    padding: 15px;
+}
+
+
+
+/* 푸터 */
+footer
+{
+    clear: both;
+    position: relative;
+    width: 100%;
+    height: 80px;
+    bottom: 80px;
+    background-color: #20334fA3;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

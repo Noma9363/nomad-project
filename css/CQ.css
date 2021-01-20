@@ -1,0 +1,344 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+/* 애니메이션 구간 End */
+
+div.wrapper
+{
+    margin : 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #20334fA3;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+}
+/* 컨텐츠 시작 */
+
+/* 컨텐츠1 */
+div.content_1
+{
+    width: 100%;
+    height: 500px;
+    background: url(../image/slides/1200Q_A_01.jpg);
+}
+/* 컨텐츠1 안에 div */
+div.content_1 div.filldiv
+{
+    width: 100%;
+    height: 100%;
+    background-color: #20334f69;
+    text-align: center;
+}
+/* Q&A */
+h1
+{
+    padding-top: 160px;
+    text-align: center;
+    font-family: 'NIXGONM-Vb';
+    font-size: 112px;
+    color: #ffffff;
+    font-weight: normal;
+    letter-spacing: 20px;
+    padding-bottom: 30px;
+}
+/* 문의하기 버튼 */
+div.content_1 div.filldiv button.MTCLAME
+{
+    width: 220px;
+    height: 60px;
+    background-color: #ffffff4d;
+    border: 0px solid #ffffff00;
+    border-radius: 30px 30px;
+    font-size: 40px;
+    color: #ffffff;
+    letter-spacing:  9px;
+    font-family: 'NIXGONL-Vb';
+}
+/* 애니메이션 */
+div.content_1 div.filldiv button.MTCLAME:hover
+{
+    color: #20334f;
+    background-color: #ffffff;
+    transition: ease-in-out 0.3s;
+}
+
+/* 서브텍스트 */
+div.content_1 div.filldiv p
+{
+    padding-top: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* 컨텐츠 끝 */
+div.content_end
+{
+    background-color: #ffffff;
+    width: 1200px;
+    height: 500px;
+    position: relative;
+}
+/* 아래 Q&A 리스트 */
+div.content_end div.QA_DIV
+{
+    width: 1110px;
+    height: 400px;
+    background-color: none;
+    margin: 0 auto;
+    margin-top: 40px;
+}
+div.content_end div.QA_DIV h2
+{
+    font-family: 'NIXGONM-Vb';
+    font-size: 65px;
+    color: #20334f;
+    font-weight: normal;
+    letter-spacing: 5px;
+    margin-bottom: 30px;
+}
+/* 테이블 */
+div.content_end div.QA_DIV table
+{
+    width: 100%;
+    font-family: 'NIXGONL-Vb';
+    color: #20334f;
+}
+div.content_end div.QA_DIV table tr
+{
+    display: flex;
+    border-bottom: #20334f solid 1px;
+    height: 40px;
+    line-height: 40px;
+}
+div.content_end div.QA_DIV table tr.first
+{
+    border-top: #20334f 4px solid;
+}
+div.content_end div.QA_DIV table th:nth-child(1)
+{
+    font-size: 20px;
+    font-family: 'NIXGONB-Vb';
+    flex: 3;
+}
+div.content_end div.QA_DIV table td:nth-child(2)
+{
+    font-size: 20px;
+    font-family: 'NIXGONL-Vb';
+    text-align: center;
+    flex: 5;
+}
+div.content_end div.QA_DIV table td:nth-child(3)
+{
+    font-size: 20px;
+    font-family: 'NIXGONL-Vb';
+    flex: 4;
+    text-align: center;
+}
+div.content_end div.QA_DIV table td:nth-child(4)
+{
+    flex: 3;
+    text-align: center;
+}
+div.content_end div.QA_DIV table td:nth-child(4) button
+{
+    width: 80%;
+    height: 24px;
+    border-radius: 12px;
+    background-color: #20334f;
+    border: none;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+/* 푸터 */
+footer
+{
+    clear: both;
+    position: absolute;
+    width: 100%;
+    height: 80px;
+    bottom: 0px;
+    background-color: #20334f;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

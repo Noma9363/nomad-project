@@ -1,0 +1,456 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+div.wrapper
+{
+    margin : 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+/* 애니메이션 구간 End */
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #20334f;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    z-index: 999;
+    width: 1200px;
+}
+/* 컨텐츠 시작 */
+
+/* 컨텐츠1 */
+div.content_1
+{
+    width: 100%;
+    height: 500px;
+    background-color: #ffffff;
+}
+/* 컨텐츠1 좌측 추천서적 */
+div.content_1 div.Rl
+{
+    float: left;
+    margin: 0;
+    width: 500px;
+    height: 100%;
+    background-color: #314273;
+}
+/* 2차 테두리 */
+div.content_1 div.Rl div.fill
+{
+    margin: auto;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 460px;
+    height: 460px;
+    border: 10px solid #ffffff;
+}
+/* 안에 이미지 */
+div.content_1 div.Rl div.fill div.image
+{
+    width: 370px;
+    height: 370px;
+    margin: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+}
+div.content_1 div.Rl div.fill div.image img
+{
+    width: 250px;
+    line-height: 370px;
+}
+
+/* 위컨텐츠 앞에 내세우는 설명div */
+div.content_1 div.contextdiv
+{
+    position: relative;
+    bottom: 180px;
+    left: 300px;
+    width: 200px;
+    height: 200px;
+    background-color: #ffffff;
+    box-shadow: -15px -15px 15px #00000080;
+    text-align: center;
+}
+div.content_1 div.contextdiv p
+{
+    color: #20334f;
+    font-family: 'NIXGONM-Vb';
+    font-size: 15px;
+    font-weight: bold;
+}
+
+div.content_1 div.contextdiv b, div.content_1 div.contextdiv p b 
+{
+    color: #20334f;
+    font-family: 'NIXGONB-Vb';
+    font-size: 24px;
+    font-weight: normal;
+}
+/* 설명 첫번째 줄 */
+div.content_1 div.contextdiv p:nth-child(1)
+{
+    padding-top: 45px;
+}
+/* 두번째줄 */
+div.content_1 div.contextdiv p:nth-child(2)
+{
+    padding-top: 15px;
+}
+/* 세번째줄 */
+div.content_1 div.contextdiv p:nth-child(3)
+{
+    padding-top: 15px;
+}
+/* 컨텐츠1 우측 */
+div.content_1 div.Rr
+{
+    position: relative;
+    float: right;
+    margin-right: 0;
+    width: 700px;
+    height: 100%;
+    background-color: #ffffff;
+    /* 임시 */
+    overflow: hidden;
+    font-size: 0;
+    padding: 0;
+    margin: 0;
+}
+/* 컨텐츠1 우측 내에 리스트부모 */
+div.content_1 div.Rr ul
+{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    list-style-type: none;
+}
+/* 리스트 포지션 변경 */
+div.content_1 div.Rr ul li
+{
+    /* 부모속성도 렐러티브가돠야 얘가 엡솔로 부모찾음 */
+    position: absolute;
+    float: left;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    display: flex;
+}
+div.content_1 div.Rr ul li:nth-child(2)
+{
+    left: 700px;
+}
+
+/* li안에 컨텐츠들 */
+div.content_1 div.Rr ul li div.itemfill
+{
+    flex: 1;
+    text-align: center;
+}
+/* 이미지 영역 */
+div.content_1 div.Rr ul li div.itemfill div.itemlist0
+{
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 180px;
+    height: 270px;
+    background-color: none;
+    border: 0.1px solid #0000003d;
+}
+/* 아이템이름 */
+div.content_1 div.Rr ul li div.itemfill p.title
+{
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-family: 'NIXGONM-Vb';
+    color: #20334f;
+}
+/* 가격 */
+div.content_1 div.Rr ul li div.itemfill p.price
+{
+    font-size: 19px;
+    font-family: 'NIXGONB-Vb';
+    color: #20334f;
+}
+
+/* 컨텐츠2 (1 복사본)*/
+div.middle
+{
+    color: #733131;
+}
+div.middle div.Rl
+{
+    background-color: #733131;
+}
+div.middle div.Rl div.contextdiv
+{
+    color: #733131;
+}
+div.middle div.Rl div.contextdiv
+{
+    color: #733131;
+}
+div.middle div.Rr ul li div.itemfill p.title
+{
+    color: #733131;
+}
+div.middle div.Rr ul li div.itemfill p.price
+{
+    color: #733131;
+}
+/* 컨텐츠3 (1 복사본) */
+div.bottom div.Rl
+{
+    background-color: #736c31;
+}
+div.bottom
+{
+    color: #736c31;
+}
+div.bottom div.Rl
+{
+    background-color: #736c31;
+}
+div.content_1 div.Rl div.contextdiv
+{
+    color: #736c31;
+}
+div.bottom div.Rr ul li div.itemfill p.title
+{
+    color: #736c31;
+}
+div.bottom div.Rr ul li div.itemfill p.price
+{
+    color: #736c31;
+}
+
+/* 위치 버튼 */
+p.location
+{
+    text-align: center;
+    width: auto;
+    height: auto;
+    position: relative;
+    color: #20334f;
+    font-size: 20px;
+    z-index: 999;
+    bottom: 43px;
+}
+p.lo01
+{
+    color: #733131;
+}
+p.lo02
+{
+    color: #736c31;
+}
+p.location i
+{
+    cursor: pointer;
+}
+
+/* div 왼쪽 대표이미지 수정 */
+div.middle div.Rl div.fill div.bener1
+{
+    margin-top: 60px;
+}
+div.bottom div.Rl div.fill div.bener2
+{
+    margin-top: 45px;
+}
+/* 컨텐츠 끝 */
+div.content_end
+{
+    background-color: #ffffff;
+    width: 1200px;
+    height: 80px;
+}
+
+/* 푸터 */
+footer
+{
+    position: relative;
+    width: 1200px;
+    height: 80px;
+    bottom: 0px;
+    background-color: #20334f;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

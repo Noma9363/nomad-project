@@ -1,0 +1,373 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* 애니메이션 구간 */
+a.underlineani
+{
+    position: relative;
+}
+a.underlineani:after
+{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0px;
+    height: 2px;
+    margin: 5px 0 0;
+    transition: all 0.1s ease-in;
+    opacity: 0;
+    background-color: #ffffff;
+}
+a.underlineani:hover:after
+{
+    width: 100%;
+    opacity: 1;
+}
+/* 이미 그 페이지라면 */
+a.active
+{
+    border-bottom: 2px solid white;
+    width: 100%;
+    opacity: 1;
+    height: 100px;
+}
+
+/* 버튼영역 */
+button.BT:hover
+{
+    transition: all 0.1s ease-in;
+    background-color: #ffffff;
+    color: #20334f;
+}
+/* 애니메이션 구간 End */
+
+div.wrapper
+{
+    margin : 0 auto;
+    width: 1200px;
+    height: auto;
+}
+
+/* 네비게이션 구간 */
+div.wrapper header
+{
+    width: 1200px;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    background-color: #20334f;
+}
+div.wrapper header nav ul 
+{
+    margin: 0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+div.wrapper header nav ul li
+{
+    float: left;
+    line-height: 80px;
+}
+
+div.wrapper header nav ul li a
+{
+    color: white;
+    text-decoration: none;
+}
+/* 로고 구간 */
+div.wrapper header nav ul li:nth-child(1)
+{
+    line-height: normal;
+    margin-left: 110px;
+    margin-top: 25px;
+}
+/* 2번 구간 */
+div.wrapper header nav ul li:nth-child(2)
+{
+    margin-left: 172px;
+    font-weight: 500;
+}
+/* 3부터 5까지 */
+div.wrapper header nav ul li:nth-child(n+3):nth-child(n-6)
+{
+    margin-left: 50px;
+    font-weight: 500;
+}
+/* 버튼 스타일 */
+div.wrapper header nav ul li button
+{
+    background-color: #ffffff00;
+    color: white;
+    border: 1px solid white;
+    /* border-radius: 10px; */
+    font-family: 맑은 고딕;
+    width: 80px;
+    margin: 0;
+    padding: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+/* 로그인 위치조정 */
+div.wrapper header nav ul li:nth-child(n+7):nth-child(n-8)
+{
+    margin-left: 43px;
+    margin-right: -10px;
+}
+
+/* 헤더 고정 */
+header
+{
+    position: absolute;
+    z-index: 999;
+    width: 1200px;
+}
+/* 컨텐츠 시작 */
+
+/* 컨텐츠1 */
+div.content_1
+{
+    width: 100%;
+    height: 80px;
+    background-color: aquamarine;
+}
+
+/* 컨텐츠2 */
+div.content_2
+{
+    width: 1200px;
+    height: 500px;
+    background: url(../image/slides/CS_HTML_Slide.jpg);
+}
+/* 컨텐츠2 속 컨텐츠 */
+div.content_2 div.filldiv
+{
+    width: 100%;
+    height: 100%;
+    background-color: #395785a3;
+    display: flex;
+}
+/* 컨텐츠2->왼쪽 어사이드 */
+div.content_2 div.filldiv aside
+{
+    flex: 5;
+    background-color: none;
+    text-align: center;
+}
+div.content_2 div.filldiv aside iframe
+{
+    margin: 0 auto;
+    width: 480px;
+    height: 360px;
+    margin-top: 70px;
+}
+
+
+/* 컨텐츠2->오른쪽 어사이드 */
+div.content_2 div.filldiv section
+{
+    flex: 5;
+    background-color: none;
+}
+/* 컨텐츠2->오른쪽 어사이드 안에 div */
+div.content_2 div.filldiv section div.innerdiv
+{
+    padding-top: 70px;
+    padding-right: 20px;
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb'
+}
+/* 컨텐츠2->오른쪽 어사이드 안에 div-> 강의제목 */
+div.content_2 div.filldiv section div.innerdiv h1
+{
+    font-weight: normal;
+    font-family: 'NIXGONL-Vb';
+    font-size: 50px;
+    letter-spacing: 9px;
+    margin-bottom: 40px;
+}
+/* 컨텐츠2->오른쪽 어사이드 안에 div-> 강의 설명 */
+div.content_2 div.filldiv section div.innerdiv p.context
+{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: 3px;
+    margin-bottom: 40px;
+    font-family: 'NIXGONL-Vb'
+}
+/* 컨텐츠2->오른쪽 어사이드 안에 div-> 저자 */
+div.content_2 div.filldiv section div.innerdiv p.author
+{
+    font-family: 'NIXGONL-Vb';
+    font-size: 15px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+/* 컨텐츠2->오른쪽 어사이드 안에 div-> 버튼div 안에 버튼 */
+div.content_2 div.filldiv section div.innerdiv div.bt_array button
+{
+    font-size: 20px;
+    color: #ffffff;
+    width: 160px;
+    background-color: #ffffff00;
+    box-sizing: border-box;
+    border: 1px solid #ffffff;
+    height: 50px;
+    border-radius: 25px 25px;
+    text-align: center;
+    letter-spacing: 4px;
+    margin-right: 15px;
+    /* 애니메이션 되돌아오기 */
+    transition-duration: 0.3s;
+}
+div.content_2 div.filldiv section div.innerdiv div.bt_array button:hover
+{
+    background-color: #ffffff;
+    color: #20334f;
+    transition: 0.3s ease-in-out;
+}
+
+/* 콘텐츠 개인수정 */
+div.CS_CSS 
+{
+    background: url(../image/slides/CS_CSS_Slide.jpg);
+}
+div.CS_CSS div.filldiv
+{
+    background-color: #853939a3;
+}
+div.CS_JS 
+{
+    background: url(../image/slides/CS_JS_Slide.jpg);
+}
+div.CS_JS div.filldiv
+{
+    background-color: #848539a3;
+}
+
+/* 컨텐츠 끝 */
+div.content_end
+{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'NIXGONL-Vb';
+    background: url(../image/slides/CS_Empty_Slide.jpg);
+    position: relative;
+}
+div.content_end p.conetxet
+{
+    padding-top: 170px;
+    padding-bottom: 40px;
+    font-size: 35px;
+    font-family: 'NIXGONL-Vb';
+    letter-spacing: 4px;
+}
+/* 컨텐츠끝 버튼 */
+div.content_end button
+{
+    width: 220px;
+    height: 50px;
+    background-color: #20334fA3;
+    border: solid 1px #ffffff;
+    border-radius: 25px 25px;
+    color: #ffffff;
+    font-size: 30px;
+    letter-spacing: 4px;
+    /* 애니메이션 되돌아올때 */
+    transition-duration: 0.3s;
+}
+/* 변형될때 */
+div.content_end button:hover
+{
+    background-color: #ffffff;
+    color: #20334f;
+    transition: 0.3s ease-in-out;
+}
+
+
+/* 푸터 */
+footer
+{
+    position: absolute;
+    clear: both;
+    width: 100%;
+    height: 80px;
+    bottom: 80px;
+    top: 420px;
+    background-color: #20334fA3;
+    text-align: left;
+}
+address
+{
+    height:60px;
+    color: #ffffff;
+    display: flex;
+    font-size: 12px;
+    font-style: normal;
+}
+
+address div.Eli_1
+{
+    flex: 2;
+}
+address div.Eli_1 img
+{
+    width: 160px;
+    height: 30px;
+    padding: 25px 40px 25px 110px;
+}
+address div.Eli_2
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_2 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_3
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 2;
+}
+address div.Eli_3 p
+{
+    padding-bottom: 5px;
+}
+address div.Eli_4
+{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 3;
+}
+address div.Eli_4 p
+{
+    padding-bottom: 5px;
+}

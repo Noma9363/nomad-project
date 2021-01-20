@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+*
+{
+    font-family: 'NIXGONM-Vb';
+    margin: 0;
+}
+body
+{
+    background-color: #20334f;
+}
+div.logo
+{
+    text-align: center;
+    padding-top: 30px;
+}
+div.wrapper
+{
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 600px;
+    height: 600px;
+    background-color: #ffffff;
+    border-radius: 8px 8px;
+    padding-top: 20px;
+}
+div.wrapper div.item_title_div
+{
+    width: 560px;
+    height: 100px;
+    background: url(../image/slides/CS_CSS_Slide.jpg);
+    /* background-color: #20334f; */
+    margin: 0 auto;
+    border-radius: 8px 8px;
+    text-align: center;
+    margin-bottom: 55px;
+}
+div.wrapper div.item_title_div div.filldiv
+{
+    width: 100%;
+    height: 100%;
+    background: #20334fA3;
+    border-radius: 8px 8px;
+}
+h1
+{
+    font-weight: normal;
+    font-size: 34px;
+    font-family: 'NIXGONL-Vb';
+    color: #ffffff;
+    line-height : 100px;
+    letter-spacing: 5px;
+}
+
+/* 섹션 공통디자인 */
+div.wrapper div.section
+{
+    width: 560px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+/* 색션 내부 공통 입력란 div */
+div.wrapper div.list0 div.inputdiv
+{
+    display: flex;
+    box-sizing: border-box;
+    border-bottom: 2px solid #20334f;
+    height: 40px;
+    margin-bottom: 10px;
+}
+/* 입력란 안에 첫번쨰div */
+div.wrapper div.list0 div.inputdiv div:nth-child(1)
+{
+    flex: 2;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/* 입력란 안에 두번쨰div */
+div.wrapper div.list0 div.inputdiv div:nth-child(2)
+{
+    flex: 10;
+    padding-bottom: 10px;
+}
+/* 입력란 안에 두번쨰div 버튼 */
+div.wrapper div.list0 div.inputdiv div:nth-child(2) input
+{
+    box-sizing: border-box;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+    width: 99%;
+}
+
+/* 개인설정 */
+div.wrapper div.list0 div.inputdiv div:nth-child(2) #user
+{
+    width: 100px;
+}
+/* 연락처 가로길이 */
+div.wrapper div.list0 div.inputdiv div:nth-child(2) #tel
+{
+    width: 200px;
+}
+div.wrapper div.list0 div.add
+{
+    border: none;
+    padding-bottom: 0;
+    height: 30px;
+}
+
+/* 가격 */
+div.price
+{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+h2
+{
+    line-height: 150px;
+    color: #20334f;
+    font-size: 52px;
+}
+
+/* 구매버튼 div */
+div.buybutondiv
+{
+    width: 560px;
+    margin: 0 auto;
+    display: flex;
+}
+/* 버튼 디자인 */
+div.buybutondiv button
+{
+    flex: 1;
+    box-sizing: border-box;
+    border: none;
+    font-size: 28px;
+    background-color: #20334f;
+    margin: 2px;
+    height: 50px;
+    color: #ffffff;
+    border-radius: 8px;
+}
+

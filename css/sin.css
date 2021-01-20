@@ -1,0 +1,130 @@
+/* 초기화 */
+*
+{
+    margin: 0;
+    font-family: 맑은 고딕 sans-serif;
+}
+@font-face {
+    font-family: 'NIXGONL-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONB-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONB-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'NIXGONM-Vb';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONM-Vb.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body
+{
+    background-color: #20334f;
+}
+div.wrapper
+{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+div.wrapper div.main
+{
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 600px;
+    height: 800px;
+    background-color: #ffffff;
+    text-align: center;
+}
+div.wrapper div.main h1 
+{
+    text-align: center;
+}
+div.wrapper div.main h1 img
+{
+    padding-top: 180px;
+    width: 200px;
+    padding-bottom: 45px;
+}
+div.wrapper div.main div.inputlist
+{
+    width: 100%;
+}
+div.inputlist div.Input
+{
+    margin: 0 auto;
+    width: 300px;
+}
+
+div.wrapper div.main div.inputlist input
+{
+    font-size: 30px;
+    border: none;
+    border-bottom: 2px solid #20334f;
+    width: 100%;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+div.wrapper div.main div.inputlist div.bt
+{
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+div.wrapper div.main div.inputlist div.bt button
+{
+    width: 100%;
+    font-size: 32px;
+    box-sizing: border-box;
+    border-radius: 5px 5px;
+    border: none;
+    background-color: #20334f;
+    color: #ffffff;
+    margin-top: 5px;
+    transition-duration: 0.3s;
+}
+div.wrapper div.main div.inputlist div.bt button:hover
+{
+    transform: scale(1.1);
+    transition: ease-in-out 0.3s;
+}
+
+div.wrapper div.main div.inputlist div.bt p
+{
+    margin-top: 25px;
+    color: #20334f;
+    font-family: 'NIXGONM-Vb';
+    
+}
+footer
+{
+    margin-top: 10px;
+    text-align: center;
+}
+footer p a
+{   
+    font-size: 12px;
+    color: #20334f;
+    text-decoration: none;
+}
+/* 알림 p태그 */
+p.debug_context_em, p.debug_context_pw
+{
+    font-size: 10px;
+    text-align: left;
+    height: 16px;
+    font-family: 'NIXGONM-Vb';
+    padding-top: 3px;
+}
+/* 이메일과 패스워드 마진바텀 없애기 */
+#EM, #PW_R, #ID
+{
+    margin-bottom: 0px;
+}
