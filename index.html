@@ -327,13 +327,22 @@
             rightBtn.click(function(){slideEvent('right')});
            
             const WHY = $('div.content_2 article div.top p');
-            const Posnow = $(window).scrollTop();
+
+            // 
+            const upBtn = $('upBtn');
+            
             $(window).scroll(function(){
-                if( Posnow > 330)
-                {
+                var now = $(window).scrollTop();
+                // console.log(now);
+                if(now > 330){
                     WHY.css({
                         'transform' : 'translateX(0)'
                     });
+                }
+                if(now > 1000){
+                    upBtn.fadeIn(200);
+                }else{
+                    upBtn.fadeOut(200);
                 }
             });
         });
