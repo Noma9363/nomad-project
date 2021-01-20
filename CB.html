@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/CB.css">
+    <link rel="stylesheet" href="css/IDCSS.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <title>서적</title>
+</head>
+<body>
+    <!-- 아이디 div -->
+    <div class="ID_Wrapper">
+        <button class="BG">X</button>
+        <div class="main">
+            <div class="logoimg">
+                <a href="main.html"><img src="image/icons/NOMADLOGO_L_B.png" alt="로고이미지"></a>
+            </div>
+            <div class="inputlist">
+                <div class="Input">
+                    <input type="text" name="ID" id="ID" placeholder="아이디를 입력하세요">
+                    <input type="password" name="PW" id="PW" placeholder="**********">
+                </div>
+                
+                <div class="bt">
+                    <button onfocus="blur()" class="LogEvent" onfocus="blur()">로그인</button>
+                    <p class="makeid">아직 계정이 없으신가요? <a href="NOMADSINGIN.html">회원가입</a></p>
+                </div>
+            </div>
+            
+            <footer class="ID_WR">
+                <p>
+                    <a href="#">이용약관</a> <a href="#">개인정보처리방침</a>
+                    <br>
+                    <a href="#">책임의 한계와 법적고지</a> <a href="#">회원정보 고객센터</a>
+                    
+                </p>
+            </footer>
+        </div>
+    </div>
+
+
+    <!-- 래퍼 -->
+    <div class="wrapper">
+        <!-- 헤더 -->
+        <header>
+            <!-- 네비 -->
+            <nav>
+                <!-- 리스트 -->
+                <ul>
+                    <li><a href="main.html" class="underlineani"><img src="image/icons/NOMADLOGO.png" alt=""></a></li>
+                    <li><a href="CP.html" class="underlineani">기관소개</a></li>
+                    <li><a href="CT.html" class="underlineani">강좌</a></li>
+                    <li><a href="CB.html" class="underlineani active">교재</a></li>
+                    <li><a href="CS.html" class="underlineani">내강의실</a></li>
+                    <li><a href="CQ.html" class="underlineani">Q&A</a></li>
+                    <li><button onclick="" class="BT IDLogin">로그인</button></li>
+                    <li class="last_li"><button onclick="" class="BT IDSingIN">회원가입</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 콘텐츠1 -->
+        <div class="content_1 top">
+            <div class="Rl">
+                <div class="fill">
+                    <div class="image">
+                        <img src="image/source/item0.png" alt="">
+                    </div>
+                </div>
+                <div class="contextdiv">
+                    <p><b>HTML을</b> 정말로</p>
+                    <p>처음으로 접하는 수강생</p>
+                    <p><b>추천 교재</b></p>
+                </div>
+            </div>
+            <div class="Rr">
+                <!-- ul을 부모로 렐러티브로 변경 -->
+                <ul>
+                    <!-- li를 자식으로 앱술 변경 -->
+                    <li class="section_0_0"> 
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_0.png" alt="리스트0"></div>
+                            <p class="title">HTML+CSS3</p>
+                            <p class="price">26,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_1.png" alt="리스트1"></div>
+                            <p class="title">점프투플라스크</p>
+                            <p class="price">21,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_2.png" alt="리스트2"></div>
+                            <p class="title">HTML5+CSS바이블</p>
+                            <p class="price">31,000원</p>
+                   
+                        </div>
+                    </li>
+                    <li class="section_0_1">
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_3.png" alt="리스트3"></div>
+                            <p class="title">점프투장고</p>
+                            <p class="price">17,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_4.png" alt="리스트4"></div>
+                            <p class="title">HTML5+CSS3+JS</p>
+                            <p class="price">26,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/HTML_B_5.png" alt="리스트5"></div>
+                            <p class="title">PHP,MySQL&JavaScript</p>
+                            <p class="price">20,000원</p>
+                   
+                        </div>
+                    </li>
+                </ul>
+                <!-- 위치 아이콘 -->
+                <p class="location">
+                    <i class="fa fa-circle se0" aria-hidden="true" onclick="moveeventSection0(0)"></i>
+                    <i class="fa fa-circle-o se01" aria-hidden="true" onclick="moveeventSection0(1)"></i>
+                </p>
+            </div>
+        </div>
+
+        <!-- 콘텐츠1 복사본(2) -->
+        <div class="content_1 middle">
+            <div class="Rl">
+                <div class="fill">
+                    <div class="image bener1">
+                        <img src="image/source/item1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contextdiv">
+                    <p class="sdsdss"><b>CSS을</b> 정말로</p>
+                    <p>처음으로 접하는 수강생</p>
+                    <p><b>추천 교재</b></p>
+                </div>
+            </div>
+            <div class="Rr">
+                <ul>
+                    <li class="section_1_0">
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_0.png" alt=""></div>
+                            <p class="title">웹디자이너를 위한CSS3</p>
+                            <p class="price">23,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_1.png" alt=""></div>
+                            <p class="title">HTML5&CSS3</p>
+                            <p class="price">36,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_2.png" alt=""></div>
+                            <p class="title">HTML5&CSS3</p>
+                            <p class="price">43,000원</p>
+                   
+                        </div>
+                    </li>
+                    <li class="section_1_1">
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_3.png" alt=""></div>
+                            <p class="title">The Book Of CSS3</p>
+                            <p class="price">32,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_4.png" alt=""></div>
+                            <p class="title">Beginning</p>
+                            <p class="price">24,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/CSS_B_5.png" alt=""></div>
+                            <p class="title">전문가를위한CSS3</p>
+                            <p class="price">43,000원</p>
+                            
+                        </div>
+                    </li>
+                </ul>
+                <!-- 위치 아이콘 -->
+                <p class="location lo01">
+                    <i class="fa fa-circle se1" aria-hidden="true" onclick="moveeventSection0(2)"></i>
+                    <i class="fa fa-circle-o se11" aria-hidden="true" onclick="moveeventSection0(3)"></i>
+                </p>
+            </div>
+        </div>
+
+        <!-- 콘텐츠1 복사본(3) -->
+        <div class="content_1 bottom">
+            <div class="Rl">
+                <div class="fill">
+                    <div class="image bener2">
+                        <img src="image/source/item2.jpg" alt="">
+                    </div>
+                </div>
+                <div class="contextdiv">
+                    <p><b>JS을</b> 정말로</p>
+                    <p>처음으로 접하는 수강생</p>
+                    <p><b>추천 교재</b></p>
+                </div>
+            </div>
+            <div class="Rr">
+                <ul>
+                    <li class="section_2_0">
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_0.png" alt=""></div>
+                            <p class="title">자바스크립트+제이쿼리 입문</p>
+                            <p class="price">21,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_1.png" alt=""></div>
+                            <p class="title">모던자바스크립트입문</p>
+                            <p class="price">31,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_2.png" alt=""></div>
+                            <p class="title">타임스크립트프로그래밍</p>
+                            <p class="price">21,000원</p>
+                   
+                        </div>
+                    </li>
+                    <li class="section_2_1">
+                        <!-- 1 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_3.png" alt=""></div>
+                            <p class="title">혼자공부하는자바스크립트</p>
+                            <p class="price">41,000원</p>
+                 
+                        </div>
+                        <!-- 2 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_4.png" alt=""></div>
+                            <p class="title">인사이드 자바스크립트</p>
+                            <p class="price">21,000원</p>
+             
+                        </div>
+                        <!-- 3 -->
+                        <div class="itemfill">
+                            <div class="itemlist0"><img src="image/source/JS_B_5.png" alt=""></div>
+                            <p class="title">코드페스티벌 자바스크립트</p>
+                            <p class="price">31,000원</p>
+                   
+                        </div>
+                    </li>
+                </ul>
+                <!-- 위치 아이콘 -->
+                <p class="location lo02">
+                    <i class="fa fa-circle se2" aria-hidden="true" onclick="moveeventSection0(4)"></i>
+                    <i class="fa fa-circle-o se21" aria-hidden="true" onclick="moveeventSection0(5)"></i>
+                </p>
+            </div>
+        </div>
+        
+        
+        <!-- 콘텐츠4 -->
+        <div class="content_end">
+
+            <footer>
+                <address>
+                    <div class="Eli_1">
+                        <img src="image/icons/NOMADLOGO_L.png" alt="로고">
+                    </div>
+                    <div class="Eli_2">
+                        <p>(주)노마드</p>
+                        <p>서울특별시 구로구 149-3</p>
+                        <p>대표 : 홍길동</p>
+                    </div>
+                    <div class="Eli_3">
+                        <p>Tel : 02-5242</p>
+                        <p>Email : Nomad@Nomad.com</p>
+                        <p>FEX : 02-5231</p>
+                    </div>
+                    <div class="Eli_4">
+                        <p>사업등록자번호 : 023223123</p>
+                        <p>통신판매업자번호 : 0293024</p>
+                        <p> </p>
+                    </div>
+
+                </address>
+            </footer>
+        </div>
+
+        <!-- 사용자 태그 -->
+        <upBtn>
+            <i class="fa fa-angle-up" id="upBtn" aria-hidden="true"></i>
+            <!-- aria-hidden="true" : 컴포넌트를 숨긴 상태라면(탭의 컨텐츠를) true -->
+        </upBtn>
+    </div>
+    <script>
+        $(document).ready(function(){
+            // alert("됨");
+        });
+
+        var section0 = 0; 
+        function moveeventSection0(n)
+        {
+            // 콘텐츠1
+            if(n==0)
+            {
+                $(".se0").attr('class', 'fa fa-circle se0');
+                $(".se01").attr('class', 'fa fa-circle-o se01');
+                $(".section_0_0").animate({'left':'0px'}, 100);
+                $(".section_0_1").animate({'left':'700px'}, 100);
+            }
+            else if (n==1)
+            {
+                $(".se0").attr('class', 'fa fa-circle-o se0');
+                $(".se01").attr('class', 'fa fa-circle se01');
+                $(".section_0_0").animate({'left':'-700px'}, 100);
+                $(".section_0_1").animate({'left':'0px'}, 100);
+            }
+            // 콘텐츠2
+            else if(n==2)
+            {
+                $(".se1").attr('class', 'fa fa-circle se1');
+                $(".se11").attr('class', 'fa fa-circle-o se11');
+                $(".section_1_0").animate({'left':'0px'}, 100);
+                $(".section_1_1").animate({'left':'700px'}, 100);
+            }
+            else if(n==3)
+            {
+                $(".se1").attr('class', 'fa fa-circle-o se1');
+                $(".se11").attr('class', 'fa fa-circle se11');
+                $(".section_1_0").animate({'left':'-700px'}, 100);
+                $(".section_1_1").animate({'left':'0px'}, 100);
+            }
+            // 콘텐츠3
+            else if(n==4)
+            {
+                $(".se2").attr('class', 'fa fa-circle se2');
+                $(".se21").attr('class', 'fa fa-circle-o se21');
+                $(".section_2_0").animate({'left':'0px'}, 100);
+                $(".section_2_1").animate({'left':'700px'}, 100);
+            }
+            else if(n==5)
+            {
+                $(".se2").attr('class', 'fa fa-circle-o se2');
+                $(".se21").attr('class', 'fa fa-circle se21');
+                $(".section_2_0").animate({'left':'-700px'}, 100);
+                $(".section_2_1").animate({'left':'0px'}, 100);
+            }
+        }
+    </script>
+    <script src="js/login.js"></script>
+    <script src="js/scrollup.js"></script>
+</body>
+</html>

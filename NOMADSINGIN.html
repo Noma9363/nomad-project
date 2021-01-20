@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sin.css">
+    <title>회원가입</title>
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="main">
+            <h1>
+                <a href="main.html"><img src="image/icons/NOMADLOGO_L_B.png" alt="로고이미지"></a>
+            </h1>
+            <div class="inputlist">
+                <div class="Input">
+                    <input type="text" name="ID" id="ID" placeholder="아이디를 입력하세요">
+                    <p class="debug_context_em">메일 양식이 올바르지 않습니다.</p>
+                    <input type="email" name="ID" id="EM" placeholder="@gmail.com">
+                    <p class="debug_context_em">메일 양식이 올바르지 않습니다.</p>
+                    <input type="password" name="PW" id="PW" placeholder="비밀번호 입력">
+                    <input type="password" name="PW" id="PW_R" placeholder="비밀번호 재입력">
+                    <p class="debug_context_pw">비밀번호가 일치하지 않습니다</p>
+                </div>
+                
+                <div class="bt">
+                    <button>가입하기</button>
+                    <p>이미 가입하셨나요? <a href="NOMADLOGIN.html">로그인</a></p>
+                </div>
+            </div>
+            
+            <footer>
+                <p>
+                    <a href="#">이용약관</a> <a href="#">개인정보처리방침</a>
+                    <br>
+                    <a href="#">책임의 한계와 법적고지</a> <a href="#">회원정보 고객센터</a>
+                    
+                </p>
+                <address></address>
+            </footer>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function(){
+            checkSystem()
+            {
+                
+            }
+        });
+    </script>
+</body>
+</html>

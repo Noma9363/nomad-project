@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="css/CT.css">
+    <link rel="stylesheet" href="css/IDCSS.css">
+    <!-- 폰트어썸 -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+  />
+    <title>강좌소개</title>
+</head>
+<body>
+    <!-- 아이디 div -->
+    <div class="ID_Wrapper">
+        <button class="BG">X</button>
+        <div class="main">
+            <div class="logoimg">
+                <a href="main.html"><img src="image/icons/NOMADLOGO_L_B.png" alt="로고이미지"></a>
+            </div>
+            <div class="inputlist">
+                <div class="Input">
+                    <input type="text" name="ID" id="ID" placeholder="아이디를 입력하세요">
+                    <input type="password" name="PW" id="PW" placeholder="**********">
+                </div>
+                
+                <div class="bt">
+                    <button onfocus="blur()" class="LogEvent" onfocus="blur()">로그인</button>
+                    <p class="makeid">아직 계정이 없으신가요? <a href="NOMADSINGIN.html">회원가입</a></p>
+                </div>
+            </div>
+            
+            <footer class="ID_WR">
+                <p>
+                    <a href="#">이용약관</a> <a href="#">개인정보처리방침</a>
+                    <br>
+                    <a href="#">책임의 한계와 법적고지</a> <a href="#">회원정보 고객센터</a>
+                    
+                </p>
+            </footer>
+        </div>
+    </div>
+
+    <!-- 래퍼 -->
+    <div class="wrapper">
+        <!-- 헤더 -->
+        <header>
+            <!-- 네비 -->
+            <nav>
+                <!-- 리스트 -->
+                <ul>
+                    <li><a href="main.html" class="underlineani"><img src="image/icons/NOMADLOGO.png" alt=""></a></li>
+                    <li><a href="CP.html" class="underlineani">기관소개</a></li>
+                    <li><a href="CT.html" class="underlineani active">강좌</a></li>
+                    <li><a href="CB.html" class="underlineani">교재</a></li>
+                    <li><a href="CS.html" class="underlineani">내강의실</a></li>
+                    <li><a href="CQ.html" class="underlineani">Q&A</a></li>
+                    <li><button onclick="" class="BT IDLogin">로그인</button></li>
+                    <li class="last_li"><button onclick="" class="BT IDSingIN">회원가입</button></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- 콘텐츠1 -->
+        <div class="content_1">
+            <div class="fillContentDiv">                
+                <h1>HTML</h1>
+                <p class="context">HTML은 웹 표준언어중 하나입니다.<br>
+                    웹의 뼈대를 맞추는 연습을 제공해 드립니다</p>
+                    <button class="CT_ST_B CT_H" onfocus="blur()">시작하기</button>
+                    <p class="sub_context">진행도 0%</p>
+                </div>
+        </div>        
+        
+        <!-- 콘텐츠2 -->
+        <div class="contnet_2">
+            <div class="fillContentDiv">
+                <h2>CSS</h2>
+                <p class="context">CSS은 HTML 등의 마크업 언어로<br>
+                    작성된 문서가 실제로 웹사이트에 표현시켜주는 언어입니다.</p>
+                    <button class="CT_ST_B CT_C" onfocus="blur()">시작하기</button>
+                    <p class="sub_context">진행도 0%</p>
+                </div>
+        </div>
+
+        <!-- 콘텐츠3 -->
+        <div class="contnet_3">
+            <div class="fillContentDiv">
+                <h2>JS</h2>
+                <p class="context">자바스크립트는 클라이언트 단에서<br>
+                    웹페이지가 동작되는 것을 담당합니다.</p>
+                    <button class="CT_ST_B CT_J" onfocus="blur()">시작하기</button>
+                    <p class="sub_context">진행도 0%</p>
+                </div>
+        </div>
+        
+        <!-- 콘텐츠4 -->
+        <div class="content_end">
+
+            <footer>
+                <address>
+                    <div class="Eli_1">
+                        <img src="image/icons/NOMADLOGO_L.png" alt="로고">
+                    </div>
+                    <div class="Eli_2">
+                        <p>(주)노마드</p>
+                        <p>서울특별시 구로구 149-3</p>
+                        <p>대표 : 홍길동</p>
+                    </div>
+                    <div class="Eli_3">
+                        <p>Tel : 02-5242</p>
+                        <p>Email : Nomad@Nomad.com</p>
+                        <p>FEX : 02-5231</p>
+                    </div>
+                    <div class="Eli_4">
+                        <p>사업등록자번호 : 023223123</p>
+                        <p>통신판매업자번호 : 0293024</p>
+                        <p> </p>
+                    </div>
+
+                </address>
+            </footer>
+            
+        </div>
+
+        <!-- 사용자 태그 -->
+        <upBtn>
+            <i class="fa fa-angle-up" id="upBtn" aria-hidden="true"></i>
+            <!-- aria-hidden="true" : 컴포넌트를 숨긴 상태라면(탭의 컨텐츠를) true -->
+        </upBtn>
+        <script src="js/login.js"></script>
+        <script src="js/scrollup.js"></script>
+    </div>
+</body>
+</html>
