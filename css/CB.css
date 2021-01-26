@@ -4,6 +4,12 @@
     margin: 0;
     font-family: 맑은 고딕 sans-serif;
 }
+body
+{
+    background-color : #000000;
+}
+
+
 @font-face {
     font-family: 'NIXGONL-Vb';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/NIXGONL-Vb.woff') format('woff');
